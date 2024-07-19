@@ -11,20 +11,20 @@ public class maxSumPare {
 		for(int i=0; i<ar.length; i++) {
 			ar[i]=scan.nextInt();
 		}
-		int s=Integer.MAX_VALUE;
-		int ss=Integer.MAX_VALUE;
+		int l=Integer.MAX_VALUE;
+		int sl=Integer.MAX_VALUE;
 		for(int i=0; i<ar.length; i++) {
 			
-			if(ar[i]<s) {
-				ss=s;
-				s=ar[i];
+			if(ar[i]>l) {
+				sl=l;
+				l=ar[i];
 			}
-			else if(ar[i]<ss && ar[i]!=s) {
+			else if(ar[i]>sl && ar[i]!=l) {
 				
-				ss=ar[i];
+				sl=ar[i];
 			}
 			
-		}System.out.println(ss+s);
+		}System.out.println(sl+l);
 	}
 
 }
